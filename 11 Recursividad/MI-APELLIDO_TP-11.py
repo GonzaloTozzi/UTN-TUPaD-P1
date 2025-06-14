@@ -130,16 +130,16 @@
 # número entero positivo (numero) y un dígito (entre 0 y 9), y devuelva cuántas veces
 # aparece ese dígito dentro del número.
 
-def contar_digito(numero, digito):
-    if numero == 0:
-        return 0
-    else:
-        if numero % 10 == digito:
-            return 1 + contar_digito(numero//10, digito)
-        else:
-            return contar_digito(numero // 10, digito)
+# def contar_digito(numero, digito):
+#     if numero == 0:
+#         return 0
+#     else:
+#         if numero % 10 == digito:
+#             return 1 + contar_digito(numero//10, digito)
+#         else:
+#             return contar_digito(numero // 10, digito)
 
-numero = int(input("Ingrese un numero: "))
-digito = int(input("Ingrese el digito que quiera contar: "))
+# numero = int(input("Ingrese un numero: "))
+# digito = int(input("Ingrese el digito que quiera contar: "))
 
-print(contar_digito(numero, digito))
+# print(contar_digito(numero, digito))
