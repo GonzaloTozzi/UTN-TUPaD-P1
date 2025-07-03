@@ -150,12 +150,107 @@
 # • Agregar un nuevo producto si no existe.
 
 
+# def gestionar_stock():
+    
+#     stock_productos = {
+#     "pan": 50,
+#     "arroz": 30,
+#     "papas": 20
+# }
+
+#     while True:
+#         print("\nOpciones:")
+#         print("1. Consultar stock")
+#         print("2. Agregar unidades a un producto existente")
+#         print("3. Agregar nuevo producto")
+#         print("4. Salir")
+
+#         opcion = input("Elegi una opcion (1-4): ")
+
+#         if opcion == "1":
+#             producto = input("Ingresa el nombre del producto: ").lower()
+#             if producto in stock_productos:
+#                 print(f"Stock de {producto}: {stock_productos[producto]}")
+#             else:
+#                 print("Ese producto no existe en nuestro stock.")
+
+#         elif opcion == "2":
+#             producto = input("Ingresa el nombre del producto: ").lower()
+#             if producto in stock_productos:
+#                 cantidad_str = input("¿Cuantas unidades queres agregar? ")
+#                 if cantidad_str.isdigit():
+#                     cantidad = int(cantidad_str)
+#                     stock_productos[producto] += cantidad
+#                     print(f"Nuevo stock de {producto}: {stock_productos[producto]}")
+#                 else:
+#                     print("Por favor, ingresa un numero valido.")
+#             else:
+#                 print("Ese producto no existe. Usa la opción 3 para agregarlo.")
+
+#         elif opcion == "3":
+#             producto = input("Ingresa el nombre del nuevo producto: ").lower()
+#             if producto in stock_productos:
+#                 print("Ese producto ya existe.")
+#             else:
+#                 cantidad_str = input("¿Cuantas unidades tiene el nuevo producto? ")
+#                 if cantidad_str.isdigit():
+#                     cantidad = int(cantidad_str)
+#                     stock_productos[producto] = cantidad
+#                     print(f"{producto} agregado con {cantidad} unidades.")
+#                 else:
+#                     print("Por favor, ingresa un numero valido.")
+
+#         elif opcion == "4":
+#             print("Saliendo del programa")
+#             return 
+
+#         else:
+#             print("Opcion no valida. Elegí entre 1 y 4.")
+
+
+# gestionar_stock()
+
+
 
 # 9) Creá una agenda donde las claves sean tuplas de (día, hora) y los valores sean eventos.
 
+
+# agenda = {
+#     ("lunes", "09:00"): "Clases",
+#     ("martes", "14:30"): "Futbol",
+#     ("miercoles", "16:00"): "Reunion",
+# }
+
+# def consultar_evento():
+#     dia = input("Ingresa el día: ").lower()
+#     hora = input("Ingresa la hora (formato HH:MM): ")
+
+#     clave = (dia, hora)
+#     if clave in agenda:
+#         print(f"Evento: {agenda[clave]}")
+#     else:
+#         print("No hay ningun evento programado para ese dia y hora.")
+
+# consultar_evento()
 
 
 # 10) Dado un diccionario que mapea nombres de países con sus capitales, construí un nuevo
 # diccionario donde:
 # • Las capitales sean las claves.
 # • Los países sean los valores.
+
+
+# paises_a_capitales = {
+#     "Argentina": "Buenos Aires",
+#     "Brasil": "Brasilia",
+#     "Chile": "Santiago",
+#     "Francia": "Paris",
+#     "Italia": "Roma"
+# }
+
+# capitales_a_paises = {}
+
+# for pais, capital in paises_a_capitales.items():
+#     capitales_a_paises[capital] = pais
+
+# print(capitales_a_paises)
